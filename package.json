@@ -1,0 +1,50 @@
+{
+  "name": "generator-webapp",
+  "version": "0.4.8",
+  "description": "Scaffold out a front-end web app",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "yeoman/generator-webapp"
+  },
+  "author": {
+    "name": "The Yeoman Team"
+  },
+  "main": "app/index.js",
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "web",
+    "app",
+    "front-end",
+    "h5bp",
+    "modernizr",
+    "jquery",
+    "grunt"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "cheerio": "~0.13.0",
+    "chalk": "~0.4.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0",
+    "generator-mocha": ">=0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "readme": "# Web app generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-webapp.png?branch=master)](http://travis-ci.org/yeoman/generator-webapp) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)\n\n[Yeoman](http://yeoman.io) generator that scaffolds out a front-end web app.\n\n![](http://i.imgur.com/uKTT2Hj.png)\n\n## Features\n\n* CSS Autoprefixing *(new)*\n* Built-in preview server with LiveReload\n* Automagically compile CoffeeScript & Compass\n* Automagically lint your scripts\n* Automagically wire up your Bower components with [bower-install](#third-party-dependencies).\n* Awesome Image Optimization (via OptiPNG, pngquant, jpegtran and gifsicle)\n* Mocha Unit Testing with PhantomJS\n* Optional - Bootstrap for SASS\n* Optional - Leaner Modernizr builds *(new)*\n\nFor more information on what `generator-webapp` can do for you, take a look at the [Grunt tasks](https://github.com/yeoman/generator-webapp/blob/master/app/templates/_package.json) used in our `package.json`.\n\n\n## Getting Started\n\n- Install: `npm install -g generator-webapp`\n- Run: `yo webapp`\n- Run `grunt` for building and `grunt serve` for preview [*](#serve-note)\n\n\n#### Third-Party Dependencies\n\n*(HTML/CSS/JS/Images/etc)*\n\nThird-party dependencies are managed with [bower-install](https://github.com/stephenplusplus/grunt-bower-install). Add new dependencies using **Bower** and then run the **Grunt** task to load them:\n\n```bash\n  bower install --save jquery\n  grunt bower-install\n```\n\nThis works if the package author has followed the [Bower spec](https://github.com/bower/bower.json-spec). If the files are not automatically added to your index.html, check with the package's repo for support and/or file an issue with them to have it updated.\n\nTo manually add dependencies, `bower install depName --save` to get the files, then add a `script` or `style` tag to your `index.html` or an other appropriate place.\n\n\n#### Grunt Serve Note\n\nNote: `grunt server` was previously used for previewing in earlier versions of the project and is being deprecated in favor of `grunt serve`.\n\n\n## Options\n\n* `--skip-install`\n\n  Skips the automatic execution of `bower` and `npm` after scaffolding has finished.\n\n* `--test-framework=<framework>`\n\n  Defaults to `mocha`. Can be switched for another supported testing framework like `jasmine`.\n\n* `--coffee`\n\n  Add support for [CoffeeScript](http://coffeescript.org/).\n\n\n## Contribute\n\nSee the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md)\n\nNote: We are regularly asked whether we can add or take away features. If a change is good enough to have a positive impact on all users, we are happy to consider it.\n\nIf not, `generator-webapp` is fork-friendly and you can always maintain a custom version which you `npm install && npm link` to continue using via `yo webapp` or a name of your choosing.\n\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php)\n",
+  "readmeFilename": "readme.md",
+  "_id": "generator-webapp@0.4.8",
+  "_from": "generator-webapp@"
+}
