@@ -26,7 +26,7 @@ For more information on what `generator-webapp` can do for you, take a look at t
 * `cd generator-webapp-typescript`
 * `npm install`
 * `cd ../../`
-* Run: `yo webapp-typescript`
+* Run: `yo webapp-typescript --ts`
 * Run `grunt` for building and `grunt serve` for preview [*](#serve-note)
 
 
